@@ -12,7 +12,7 @@ with open('blocks.in', 'r') as fin, open('blocks.out', 'w') as fout:
     word1_count, word2_count = map(count, fin.readline().split())  # Count the occurances in both words
 
     # Find the max letter count in both words in these two lists
-    for letter_required, letter1_count, letter2_count in zip(letters_required, word1_count, word2_count):
-      letter_required += max(letter1_count, letter2_count)
+    for i in range(26):
+      letters_required[i] += max(word1_count[i], word2_count[i])
       
   fout.write('\n'.join([str(n) for n in letters_required]))  # Write result to file
