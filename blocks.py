@@ -15,4 +15,4 @@ with open('blocks.in', 'r') as fin, open('blocks.out', 'w') as fout:
     for letter_required, letter1_count, letter2_count in zip(letters_required, word1_count, word2_count):
       letter_required += max(letter1_count, letter2_count)
       
-  fout.write('\n'.join(letters_required))  # Write result to file
+  fout.write('\n'.join([str(n) for n in letters_required]))  # Write result to file
