@@ -1,0 +1,15 @@
+### Use this for new (input based input) files!!! ###
+_________________________________
+
+
+# {contest_name}
+# {contest_link}
+
+from sys import stdin, stdout
+
+stdin.readline()  # Smaller inputs
+stdin.read().split('\n')  # Large inputs
+
+### FUNCTIONS HERE ###
+
+stdout.write("result")

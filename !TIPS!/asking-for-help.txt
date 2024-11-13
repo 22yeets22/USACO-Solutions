@@ -1,0 +1,56 @@
+### HOW TO TROUBLESHOOT ###
+# Taken from: https://codeforces.com/blog/entry/64993
+# From USACO Guide: https://usaco.guide/general/debugging-checklist
+
+
+What to do when you need help with a problem?
+
+If there is an editorial, read it. If you don't know some technique, google it and read a tutorial.
+Ask a friend for help. It's very useful to find someone in your university/country who also does competitive programming.
+"I'm getting WA and don't know why."
+Try to find a counter-test. Take an accepted code if it's available, and write a brute force otherwise. Test it against your solution on thousands of random tests, especially small ones.
+"My code doesn't work on this test."
+Use some debugging tools (google them for your OS/IDE) or just print values of everything you compute. I use gdb and valgrind. Simulate the program on paper too. This way you should find an exact place where something incorrect happens, or you will see that your approach is completely wrong.
+"The output differs on my machine and in Codeforces/anotherPlatform."
+It's likely "undefined behavior", e.g. you don't initialize a local variable or you don't return anything from a non-void function. It doesn't happen often if you know the language well. Avoid non-integer values if possible, because real values involve the precision error. Try running your program in a few places online like ideone.com or Codeforces custom invocation. Don't use ideone during a contest or somebody will see your code and you will be disqualified! If it's C++, use compilations flags that catch more errors. I use g++ -std=c++17 -Wshadow -Wall -o a a.cpp -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -g. It increases the running time though, so compile in a different way if you need the speed.
+
+
+General advice:
+
+Practice by solving problems with editorials, especially if you don't know people doing CP, e.g. in your university.
+Solve problems slightly above your level, not something extremely hard. If the solution/editorial is overwhelming, maybe get back to this problem in a few months.
+Still want to ask for help?
+
+If you think your question is small and easy to answer, consider asking in the discord channel, link.
+Write a blog instead of asking some random red guy in priv. This way more people can see it and more people can read the answer and learn something.
+Provide a source of your problem.
+If there is no link and a person is not well known in the community, I'm assuming it's from an ongoing contest or it's your homework. I think such blogs should be answered too, but not immediately.
+Describe what you already came up with.
+If you have some code, use meaningful variable names and put comments. If you know which part doesn't work, mention it.
+Either put the code in "block" and "spoiler" tags (you can see them next to bolding and enumeration), or give a link to a submission or an upload in pastebin/ideone/etc.
+Use proper English. Full words, dots to finish sentences, uppercase to start them. Use a browser that checks your spelling in English.
+You can read more here.
+
+
+
+Also:
+
+
+"Can I ask a question?"
+
+This happens often in priv. Just ask your question instead of wasting my time. Also, http://www.nohello.com/.
+
+
+Using "bro/sir"
+
+Don't use that. See how others write in Codeforces or any other international forum.
+
+
+"Why is my blog downvoted?"
+
+You shouldn't care about it. Codeforces votes are strange and random sometimes. Still, use your main account. I prefer answering people that use Codeforces and have some non-empty contest history.
+
+
+"How to train, get better, etc.?"
+
+Google your question. There were plenty of those in Codeforces and Quora. If you don't want to do that, just read this (https://codeforces.com/blog/entry/47516).

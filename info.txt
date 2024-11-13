@@ -1,0 +1,9 @@
+These problems were completed for:
+Usaco Guide
+
+https://usaco.guide/dashboard/
+
+
+
+Use the !BOILERPLATES! folder and run boilerplate-old.py on a old usaco problem (that requires file reading).
+It will automatically generate a file with the boilerplate and input.
